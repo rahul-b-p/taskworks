@@ -1,0 +1,63 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boy{
+    width: 300px;
+    height: 400px;
+    margin: 50px 50px;
+    padding: 2px 2px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s infinite;
+} 
+.boy:hover{
+    background-color: red;
+}
+.boy img{
+    width: 40%;
+    position: fixed;  
+    border-radius: 20%;
+}
+@keyframes rotate{
+    40%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+.name{
+    margin-left: 70px;
+    animation: wid 4s infinite;
+}
+@keyframes wid{
+    20%{
+        margin-left: 40px;
+    }
+}
+.name h1{
+    color: darkred;
+}
+.name:hover h1{
+    font-size: 100px;
+    color: blue;
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: translateY(10px);
+    }
+    20%{
+        transform: translateY(-10px);
+    }
+    30%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+}
